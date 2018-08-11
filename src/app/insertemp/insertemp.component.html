@@ -1,0 +1,64 @@
+
+<h2>Enter the Details</h2>
+<div style="width: 500px; margin: 50px auto 0 auto;">
+<form  method="post">
+
+  <table border="1" cellpadding="5">
+  <!--  	<caption>
+      <h2>
+        <c:if test="${emp != null}">
+                      Edit Employee
+                  </c:if>
+        <c:if test="${emp == null}">
+                      Add New Employee
+                  </c:if>
+      </h2>
+    </caption>
+    <c:if test="${emp != null}">
+      <input type="hidden" name="id" value= "<c:out value='${emp.id}'/>"/>
+    </c:if>-->
+    <tr>
+      <th>EmpID:</th>
+      <td><input [(ngModel)]="empID" type="hidden" name="empID" size="45"
+         /></td>
+    </tr>
+    <tr>
+      <th>Employee Name:</th>
+      <td><input [(ngModel)]="empName" type="text" name="empName" size="45"
+         /></td>
+    </tr>
+    
+    <tr>
+      <th>Employee Password:</th>
+      <td><input [(ngModel)]="password" type= "password" name="password" size="15"
+        /></td>
+    </tr>
+    <tr>
+      <th>Employee EmailId:</th>
+      <td><input [(ngModel)]="emailId" type="text" name="emailId" size="25"
+         /></td>
+    </tr>
+    <tr>
+      <th>Employee Role:</th>
+      <td><input type="radio" name="role" value="Employee" size="5" />Employee
+        <input type="radio" name="role" value="Manager" size="5" />Manager</td>
+    </tr>
+    <tr>
+      <th>EmployeeContact Number:</th>
+      <td><input [(ngModel)]="phone" type="text" name="phone" size="15"
+         /></td>
+    </tr>
+  <!--	<tr>
+        <th>status:</th>
+      <td><input type="radio" name="status" value="true" size="5" />true</td>
+        <td><input type="radio" name="status" value="false" size="5" />false</td>
+    </tr>-->
+      <tr>
+              <td colspan="2" align="center">
+                  <input type="submit" value="Save" (click)="register()"/>
+                  &nbsp;
+              <input type="reset" value="Reset"></td>
+          </tr>
+      </table>
+      </form>
+    </div>

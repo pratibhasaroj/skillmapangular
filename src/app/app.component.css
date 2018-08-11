@@ -1,0 +1,22 @@
+h1{
+
+    color:#389;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 250%;
+}
+h2,h3{
+    color:#878;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20%;
+}
+body{
+    margin:2em;
+}
+
+body,input[text],button{
+    color: #909;
+    font-family: 'Courier New', Courier, monospace;
+}
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
